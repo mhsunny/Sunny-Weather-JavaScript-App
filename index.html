@@ -1,0 +1,59 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sunny Weather JavaScript Web App - Find the latest weather infromation of major cities of the world</title>
+    <meta name="description" content="This weather app to find the latest weather information using JavaScript Modern version es6 and es7 version and Acuweather API for the major cities of the world.">
+    <meta name="keywords" content="This weather app to find the latest weather information using JavaScript Modern version es6 and es7 version  and Acuweather API for the major cities of the world">
+    <meta name="author" content="M Hasan [Sunny] https://www.mmhsunny.com/">
+
+</head>
+
+<body>
+
+    <div class="container my-5 mx-auto">
+
+        <h1 class="text-muted text-center my-4 h3">Sunny Weather App</h1>
+
+
+        <form class="change-location my-4 text-center text-muted">
+            <label for="city">Enter a location for latest weather records</label>
+            <div class="row">
+                <div class="col-sm-9 m-0 p-0">
+                    <input type="text" name="city" class="form-control p-4 rounded-0 ">
+
+                </div>
+                <div class="col-sm-3  m-0 p-0">
+                    <input type="submit" name="submit" value="Search" class="btn btn-dark btn-lg rounded-0  px-4 py-2" />
+
+                </div>
+            </div>
+        </form>
+
+        <div class="card shadow-lg rounded" id="card-container">
+            <img src="img/weather.png" class="time card-img-top" alt="weather">
+            <div class="icon bg-light mx-auto text-center">
+                <img class="weather-icon" src="img/empty.png" alt="icon">
+            </div>
+            <div class="text-muted text-uppercase text-center details">
+                <h5 class="my-3">City name</h5>
+                <div class="my-3">Weather condition</div>
+                <div class="display-4 my-4">
+                    <span>temp</span>
+                    <span>&deg;C</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="scripts/scroll.js"></script>
+
+    <script src="scripts/forecast.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+
+</html>
