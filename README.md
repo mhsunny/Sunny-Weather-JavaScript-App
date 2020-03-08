@@ -1,4 +1,4 @@
-"# Sunny Weather JavaScript Web App 
+# Sunny Weather JavaScript Web App 
 
 - This weather app to find the latest weather information using JavaScript Modern version es6 and es7 version and Acuweather API for the major cities of the world. 
 
@@ -8,17 +8,26 @@
 - To use this app you have to updat the api key from accuweather. Just regirster at accouweather and create a new web app and get a api key. 
 
  - Replace the Key with your key at his file : scripts/forecast.js
+
+# Demo
+https://weather-app-4ecfc.firebaseapp.com/
+
+# Author
+M Hasan (Sunny)
+- https://www.mmhsunny.com/
+  
+
+<pre>
 <code>
  
 const key = 'FdsfdsdsfsfWhidsduqSv3TIddfsZ';
-            updateUI(data);               
+updateUI(data);               
 
 const cityForm = document.querySelector('.change-location');
 const card = document.querySelector('.card');
 const details =  document.querySelector('.details');
 const time =   document.querySelector('img.time');
 const icon =   document.querySelector('.weather-icon');
-
 
  // event listener
 document.addEventListener('DOMContentLoaded', function() {
@@ -109,10 +118,5 @@ const updateUI = (data) =>{
  
 </code>
 
-# Demo
-https://weather-app-4ecfc.firebaseapp.com/
+</pre>
 
-# Author
-M Hasan (Sunny)
-- https://www.mmhsunny.com/
-  
