@@ -5,17 +5,19 @@ const time =   document.querySelector('img.time');
 const icon =   document.querySelector('.weather-icon');
 
 
-
  // event listener
 document.addEventListener('DOMContentLoaded', function() {
- 
-    updateCity('new york')
+     let city = localStorage.getItem('city') ;
+    if(!city) {
+        city = 'New York' ;
+    } 
+
+    updateCity(city)
     .then(data=>{
-        console.log(data);
-        updateUI(data);               
+            updateUI(data);               
     }).catch(err=>{
         console.log(err.message);
-});
+    });
 
 }, false);
   
@@ -73,8 +75,7 @@ const updateUI = (data) =>{
         e.preventDefault();
         const city = cityForm.city.value.trim();
         cityForm.reset();
-        
-    
+         
     
         updateCity(city)
             .then(data=>{
@@ -84,6 +85,10 @@ const updateUI = (data) =>{
         });
         moveMeDOwn(200) ;
 
+        // set local storage 
+        localStorage.setItem('city', city );       
+
+
     });
-    
-    
+
+ 
